@@ -7,8 +7,8 @@ const express = require("express");
 const app = express();
 
 const guessPort = require("./utils/guess_port");
-// const port = guessPort();
-const port = 3000;
+const port = guessPort();
+// const port = 3000;
 
 console.log(port);
 
@@ -36,6 +36,10 @@ app.set("view engine", "html");
 // -------
 
 app.use( "/", require("./controllers/homepage"));
+
+app.use( "/", require("./controllers/about"));
+
+app.use( "/", require("./controllers/contact"));
 
 
 // Starting server App

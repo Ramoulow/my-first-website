@@ -14,11 +14,21 @@
 
     </h1>
 
+    Username: <%= username %>
+
     <p>
 
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam debitis eos reiciendis placeat in ipsa laborum a recusandae. Beatae, consectetur!
 
     </p>
+
+    <% for (let fruit of fruits) { %>
+        <div>
+
+            <strong>Fruit: </strong> <%= fruit %>
+
+        </div>
+    <% } %>
     
 </body>
 </html>
