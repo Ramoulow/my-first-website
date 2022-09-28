@@ -10,6 +10,8 @@ const path = "/contact";
 // Définition du controlleur de la page
 const controller = (request, response) => {
     response.render("contact", {
+        pageId: "contact",
+        pageTitle: "Contact"
     });
 };
 

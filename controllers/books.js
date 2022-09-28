@@ -5,23 +5,14 @@ const express = require("express");
 const router = express.Router();
 
 // Définition du chemin de la page
-const path = "/";
+const path = "/books";
 
 // Définition du controlleur de la page
 const controller = (request, response) => {
-
-    let username = "Bobby";
-
-    let fruits = ["Pommes", "Poires", "Bananes"];
-
-    // response.render("nom de la vue", objet de données a transmettre à la vue);
-    response.render("homepage", {
-        pageId: "homepage",
-        pageTitle: "Mon super site",
-        username: username,
-        fruits: fruits
+    response.render("books", {
+        pageId: "books",
+        pageTitle: "books",
     });
-
 };
 
 // Ajout de la définition de la page au registre de routage de Express
